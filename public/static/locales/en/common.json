@@ -1,0 +1,8 @@
+{
+  "notifications": {
+    "SUCCESSFULLY_SAVED_MESSAGE": "Successfully saved",
+    "SUCCESSFULLY_SAVED_TITLE": "Saved",
+    "ITEMS_SUCCESSFULLY_DELETED_MESSAGE": "Items successfully deleted",
+    "ITEMS_SUCCESSFULLY_DELETED_TITLE": "Deleted"
+  }
+}

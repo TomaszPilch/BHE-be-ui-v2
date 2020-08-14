@@ -5,10 +5,9 @@ import { createWrapper } from 'next-redux-wrapper'
 import { createEpicMiddleware } from 'redux-observable'
 import Immutable from 'seamless-immutable'
 
-import rootEpic from '../epics/index'
 import makeRootReducer from './reducers'
 
-const initStore = (context, initialState = {}) => {
+const initStore = (initialState = {}, context, apis, rootEpic) => {
   const epicMiddleware = createEpicMiddleware()
 
   const middleware = [thunk, epicMiddleware]
@@ -22,7 +21,7 @@ const initStore = (context, initialState = {}) => {
 
   store.asyncReducers = {}
 
-  epicMiddleware.run(rootEpic())
+  epicMiddleware.run(rootEpic)
 
   return store
 }
