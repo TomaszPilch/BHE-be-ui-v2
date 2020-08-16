@@ -41,7 +41,7 @@ const ActualUserEpics = (api) => [
               return from([
                 UserActions.onChangeUserGroupSuccess(response.data.selectedGroupId),
                 UserActions.onGetActualUserRequest(),
-                NavigationActions.onRequestRedirectTo('/'),
+                NavigationActions.onRequestRedirectTo('/', '/'),
               ])
             }
             throw response

@@ -1,4 +1,10 @@
 {
+  "errorCodes": {
+    "SOMETHING_WRONG": "Something went wrong, try it again later.",
+    "BAD_EMAIL": "Incorrect email.",
+    "BAD_PASSWORD": "Incorrect password.",
+    "MISSING_HELPER_ACTIONS": "This input needs helper actions!"
+  },
   "notifications": {
     "SUCCESSFULLY_SAVED_MESSAGE": "Successfully saved",
     "SUCCESSFULLY_SAVED_TITLE": "Saved",

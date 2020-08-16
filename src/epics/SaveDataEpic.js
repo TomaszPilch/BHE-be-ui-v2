@@ -22,7 +22,7 @@ const SaveDataEpic = (api) => [
             }
             if (response.status === 200) {
               return from([
-                NavigationActions.onRequestRedirectTo(action.data.moduleUrl),
+                NavigationActions.onRequestRedirectTo('/[module]', action.data.moduleUrl),
                 EditActions.onEditSaveRequestSuccess(response.data),
                 NotificationActions.addSuccessNotification(
                   'SUCCESSFULLY_SAVED_MESSAGE',
