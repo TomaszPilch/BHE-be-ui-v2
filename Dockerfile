@@ -1,4 +1,4 @@
-FROM tomaszdevx/uni-base-image:v1.0.0 AS stage0
+FROM tomaszdevx/uni-base-image:v1.0.1 AS stage0
 
 WORKDIR /workspace
 
@@ -6,7 +6,7 @@ COPY ./ ./
 
 RUN yarn install && yarn build && rm -rf node_modules && yarn install --production=true && yarn cache clean && apk del native-deps
 
-FROM node:11-alpine
+FROM node:14-alpine
 
 WORKDIR /workspace
 
