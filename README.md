@@ -16,8 +16,6 @@ First commit 2018-01-17.
 
 ## TODO MVP:
 
-- [ ] File upload
-- [ ] Json component (not work in nextJS?)
 - [ ] Set locale
 - [ ] Tests
 

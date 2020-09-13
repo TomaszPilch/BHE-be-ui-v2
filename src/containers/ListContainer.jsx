@@ -2,9 +2,9 @@
 import React from 'react'
 
 // components
-import TitleWithBreadcrumbs from '../components/TitleWithBreadcrumbs'
-import withModule from '../components/WithModule'
-import ListComponent from '../components/ListComponent'
+import TitleWithBreadcrumbs from '@bheui/components/lib/components/TitleWithBreadcrumbs'
+import withModule from '@bheui/components/lib/components/WithModule'
+import ListComponent from '@bheui/components/lib/components/ListComponent'
 
 // types
 

@@ -5,10 +5,10 @@ import { connect } from 'react-redux'
 // redux
 
 // components
-import TitleWithBreadcrumbs from '../components/TitleWithBreadcrumbs'
+import TitleWithBreadcrumbs from '@bheui/components/lib/components/TitleWithBreadcrumbs'
 
 // types
-import type { UserType } from '../types/UserTypes'
+import type { UserType } from '@bheui/components/lib/types/UserTypes'
 
 type Props = {
   user: UserType,

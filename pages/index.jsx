@@ -1,12 +1,12 @@
 // @flow
 import React from 'react'
 
+import token from '@bheui/components/lib/initial/token'
+import { serverUrl } from '@bheui/components/lib/services/Api'
+import tokenEffect from '@bheui/components/lib/initial/tokenEffect'
+
 import HomeContainer from '../src/containers/HomeContainer'
 import RootContainer from '../src/containers/RootContainer'
-
-import token from '../src/initial/token'
-import { serverUrl } from '../src/services/Api'
-import tokenEffect from '../src/initial/tokenEffect'
 
 const Home = (props) => {
   tokenEffect(props)

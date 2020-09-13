@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux'
 
-const LoginRedux = require('../redux/LoginRedux')
-const NavigationRedux = require('../redux/NavigationRedux')
-const NotificationRedux = require('../redux/NotificationRedux')
-const UserRedux = require('../redux/UserRedux')
-const ListRedux = require('../redux/ListRedux')
-const EditRedux = require('../redux/EditRedux')
-const HelperRedux = require('../redux/HelperRedux')
+const LoginRedux = require('@bheui/components/lib/redux/LoginRedux')
+const NavigationRedux = require('@bheui/components/lib/redux/NavigationRedux')
+const NotificationRedux = require('@bheui/components/lib/redux/NotificationRedux')
+const UserRedux = require('@bheui/components/lib/redux/UserRedux')
+const ListRedux = require('@bheui/components/lib/redux/ListRedux')
+const EditRedux = require('@bheui/components/lib/redux/EditRedux')
+const HelperRedux = require('@bheui/components/lib/redux/HelperRedux')
 
 const reduxStore = {
   login: {
@@ -32,7 +32,7 @@ const reduxStore = {
   },
 }
 
-export default () =>
+const combineReducersFunction = () =>
   combineReducers({
     login: reduxStore.login.redux.reducer,
     navigation: reduxStore.navigation.redux.reducer,
@@ -42,3 +42,5 @@ export default () =>
     edit: reduxStore.edit.redux.reducer,
     helper: reduxStore.helper.redux.reducer,
   })
+
+export default combineReducersFunction

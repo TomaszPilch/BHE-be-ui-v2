@@ -4,22 +4,22 @@ import { connect } from 'react-redux'
 import { ToastContainer } from 'react-toastr'
 import Router, { withRouter } from 'next/router'
 
-// routes
-import Api from '../services/Api'
-import { withTranslation } from '../functions/i18nNext'
-
 // redux
-import UserActions from '../redux/UserRedux'
-import NotificationActions from '../redux/NotificationRedux'
-import NavigationActions from '../redux/NavigationRedux'
-import ListActions from '../redux/ListRedux'
-
-// components
-import Header from '../components/HeaderComponent'
+import UserActions from '@bheui/components/lib/redux/UserRedux'
+import NotificationActions from '@bheui/components/lib/redux/NotificationRedux'
+import NavigationActions from '@bheui/components/lib/redux/NavigationRedux'
+import ListActions from '@bheui/components/lib/redux/ListRedux'
 
 // types
-import type { NotificationType } from '../redux/NotificationRedux'
-import type { UserGroup } from '../types/UserTypes'
+import type { NotificationType } from '@bheui/components/lib/redux/NotificationRedux'
+import type { UserGroup } from '@bheui/components/lib/types/UserTypes'
+
+// routes
+import Api from '@bheui/components/lib/services/Api'
+import { withTranslation } from '../functions/i18nNext'
+
+// components
+import Header from '../components/HeaderWithTranslations'
 
 type Props = {
   clearNotifications: () => void,

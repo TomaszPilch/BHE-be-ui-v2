@@ -1,9 +1,9 @@
 // @flow
-import mainEndpoints, { createApi, createSelfApi, loginEndpoints } from '../services/Api'
+import mainEndpoints, { createApi, createSelfApi, loginEndpoints } from '@bheui/components/lib/services/Api'
 
 import RootEpic from '../epics'
 
-export default () => {
+const createApis = () => {
   const apis = {
     main: mainEndpoints(createApi()),
     login: loginEndpoints(createSelfApi()),
@@ -16,3 +16,5 @@ export default () => {
   const rootEpic = RootEpic(apis)
   return [apis, rootEpic]
 }
+
+export default createApis

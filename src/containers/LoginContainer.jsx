@@ -4,10 +4,10 @@ import { connect } from 'react-redux'
 
 // components
 import { IStackProps, Stack, MessageBar, MessageBarType } from '@fluentui/react'
-import FormComponent from '../components/form/FormComponent'
+import FormComponent from '@bheui/components/lib/components/form/FormComponent'
 
 // redux
-import LoginActions from '../redux/LoginRedux'
+import LoginActions from '@bheui/components/lib/redux/LoginRedux'
 import { withTranslation } from '../functions/i18nNext'
 
 type Props = {

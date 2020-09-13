@@ -5,15 +5,15 @@ import Immutable from 'seamless-immutable'
 import { Pivot, PivotItem } from '@fluentui/react'
 
 // redux
-import EditActions from '../redux/EditRedux'
-import HelperActions from '../redux/HelperRedux'
+import EditActions from '@bheui/components/lib/redux/EditRedux'
+import HelperActions from '@bheui/components/lib/redux/HelperRedux'
 
 // utils
 
 // components
-import TitleWithBreadcrumbs from '../components/TitleWithBreadcrumbs'
-import withModule from '../components/WithModule'
-import FormComponentWithStack from '../components/form/FormComponentStack'
+import TitleWithBreadcrumbs from '@bheui/components/lib/components/TitleWithBreadcrumbs'
+import withModule from '@bheui/components/lib/components/WithModule'
+import FormComponentWithStack from '@bheui/components/lib/components/form/FormComponentStack'
 
 // types
 
