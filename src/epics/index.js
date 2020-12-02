@@ -5,7 +5,7 @@ import { combineEpics } from 'redux-observable'
 import ActualUserEpics from '@bheui/components/lib/epics/ActualUserEpics'
 import ListSettingsEpic from '@bheui/components/lib/epics/ListSettingsEpic'
 import GetLocaleEpic from '@bheui/components/lib/epics/GetLocaleEpic'
-import IsLoggedInEpic from '@bheui/components/lib/epics/IsLoggedInEpic'
+// import IsLoggedInEpic from '@bheui/components/lib/epics/IsLoggedInEpic'
 import LoginEpic from '@bheui/components/lib/epics/LoginEpic'
 import ListDataEpic from '@bheui/components/lib/epics/ListDataEpic'
 import GetConfigEpic from '@bheui/components/lib/epics/GetConfigEpic'
@@ -22,7 +22,7 @@ const epics = (apis) => [
   GetConfigEpic(apis.main),
   GetItemData(apis.main),
   GetLocaleEpic(apis.main),
-  IsLoggedInEpic(apis.main),
+  // IsLoggedInEpic(apis.main),
   LoginEpic(apis.login, apis.main, apis.setToken),
   RemoveItemsEpic(apis.main),
   GetDailyPictureEpic(apis.main),
