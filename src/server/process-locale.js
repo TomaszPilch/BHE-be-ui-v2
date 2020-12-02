@@ -5,7 +5,9 @@ const { mergeDeepRight } = require('ramda')
 
 const serverUrl = process.env.API_URL
 
-// use passphrase
+// todo use passphrase
+// todo add changes from changelog for ui components
+// todo uppy
 module.exports = () => {
   const axiosApi = axios.create({
     baseURL: `${serverUrl}/api2/v1`,
