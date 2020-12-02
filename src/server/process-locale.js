@@ -35,6 +35,7 @@ module.exports = () => {
                 defaultData = JSON.parse(fs.readFileSync(fullPath))
               }
               fs.writeFileSync(fullPath, JSON.stringify(mergeDeepRight(defaultData, localeFileResponse.data)))
+              console.info(`Locale saved: /locale/${locale}/${namespace}`)
             })
             .catch((e) => {
               console.error(`Cannot get locales: ${locale}/${namespace}`)
