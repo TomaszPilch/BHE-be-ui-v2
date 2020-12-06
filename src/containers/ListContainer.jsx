@@ -5,6 +5,7 @@ import React from 'react'
 import TitleWithBreadcrumbs from '@bheui/components/lib/components/TitleWithBreadcrumbs'
 import withModule from '@bheui/components/lib/components/WithModule'
 import ListComponent from '@bheui/components/lib/components/ListComponent'
+import CustomModuleComponents from '@bheui/components/lib/components/modules/CustomModuleComponents'
 
 // types
 
@@ -21,6 +22,7 @@ type Props = {
 class ListContainer extends React.Component<Props, State> {
   render() {
     const { changeRedirectUrl, module, navigationItem, rights, settings, t } = this.props
+    console.log(this.props)
     return (
       <div className="list-container-wrapper">
         <div className="container">
@@ -35,6 +37,7 @@ class ListContainer extends React.Component<Props, State> {
         <div className="container ms-bgColor-white list-container">
           <ListComponent
             changeRedirectUrl={changeRedirectUrl}
+            customComponents={CustomModuleComponents}
             module={module}
             navigationItem={navigationItem}
             rights={rights}

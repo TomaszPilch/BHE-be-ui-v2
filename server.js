@@ -1,23 +1,57 @@
-const { createServer } = require('http')
-const { parse } = require('url')
+const express = require('express')
 const next = require('next')
+const compression = require('compression')
+const bodyParser = require('body-parser')
 
-const processLocale = require('./src/server/process-locale')
+const processLocale = require('@bheui/server-functions/lib/locale/process-locale')
+
+const apiLogin = require('./pages/api/login').default
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
+const renderPageOrContinue = (req, res, nextCl) => {
+  console.log(req.path)
+  if (req.path.includes('_next') || req.path.includes('api/')) {
+    return nextCl()
+  }
+  const query = { ...req.params }
+  if (req.params.id) {
+    query.page = '/[module]/[action]/[id]'
+  } else if (req.params.action) {
+    query.page = '/[module]/[action]'
+  } else if (req.params.module) {
+    query.page = '/[module]'
+  }
+  console.log(query)
+  return app.render(req, res, req.params.page, query)
+}
+
 app.prepare().then(() => {
   processLocale()
 
-  createServer((req, res) => {
-    // Be sure to pass `true` as the second argument to `url.parse`.
-    // This tells it to parse the query portion of the URL.
-    const parsedUrl = parse(req.url, true)
-    handle(req, res, parsedUrl)
-  }).listen(3000, (err) => {
-    if (err) throw err
-    console.log('> Ready on http://localhost:3000')
+  const server = express()
+  server.use(`/static`, express.static('public'))
+  server.use(compression())
+
+  server.get('/is-ready', (req, res) => {
+    res.sendStatus(200)
+  })
+
+  server.use('/api/login', bodyParser.json({ limit: '50mb' }))
+  server.post('/api/login', apiLogin)
+
+  server.get('/:module/:action/:id', renderPageOrContinue, (req, res) => handle(req, res))
+  server.get('/:module/:action', renderPageOrContinue, (req, res) => handle(req, res))
+
+  server.get('*', (req, res) => handle(req, res))
+
+  server.listen(3000, (err) => {
+    if (err) {
+      console.error(err.stack)
+      process.exit(1)
+    }
+    console.log(`> Ready on http://localhost:${3000}`)
   })
 })

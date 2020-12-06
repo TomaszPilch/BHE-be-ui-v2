@@ -86,15 +86,19 @@ class RootScreen extends React.Component<Props, null> {
 
   checkNotificationsToShow = () => {
     const { notificationToShow, clearNotifications, t } = this.props
-    if (notificationToShow.length > 0) {
+    if (notificationToShow.length > 0 && this.toastrContainer && this.toastrContainer.current) {
       const notifications = [...notificationToShow]
       clearNotifications()
       notifications.map((notification: NotificationType) => {
-        this.toastrContainer.current[notification.type](
-          notification.translate ? t(`notifications.${notification.message}`) : notification.message,
-          notification.translate ? t(`notifications.${notification.title}`) : notification.title,
-          { closeButton: true },
-        )
+        if (typeof this.toastrContainer.current[notification.type] === 'function') {
+          this.toastrContainer.current[notification.type](
+            notification.translate ? t(`notifications.${notification.message}`) : notification.message,
+            notification.translate ? t(`notifications.${notification.title}`) : notification.title,
+            { closeButton: true },
+          )
+        } else {
+          console.error(notification)
+        }
         return true
       })
     }
@@ -111,6 +115,7 @@ class RootScreen extends React.Component<Props, null> {
 
   render() {
     const { children, navigation, presentationId, presentationIds, router, selectedGroup, t, userGroups } = this.props
+    console.log(this.props)
     return (
       <div className="app-body">
         <ToastContainer ref={this.toastrContainer} className="toast-top-right" />
