@@ -52,7 +52,7 @@ class RootScreen extends React.Component<Props, null> {
     let redirectPath = null
     let redirectPathAs = null
     if ((!token || shouldReloadToken) && router.pathname !== '/login') {
-      redirectPath = 'login'
+      redirectPath = '/login'
       redirectPathAs = `/login?redirectTo=${window.location.pathname}`
     } else if (token && router.pathname === '/login') {
       const urlParams = new URLSearchParams(window.location.search)
@@ -115,7 +115,6 @@ class RootScreen extends React.Component<Props, null> {
 
   render() {
     const { children, navigation, presentationId, presentationIds, router, selectedGroup, t, userGroups } = this.props
-    console.log(this.props)
     return (
       <div className="app-body">
         <ToastContainer ref={this.toastrContainer} className="toast-top-right" />

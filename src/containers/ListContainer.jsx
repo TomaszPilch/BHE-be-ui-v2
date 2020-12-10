@@ -22,7 +22,6 @@ type Props = {
 class ListContainer extends React.Component<Props, State> {
   render() {
     const { changeRedirectUrl, module, navigationItem, rights, settings, t } = this.props
-    console.log(this.props)
     return (
       <div className="list-container-wrapper">
         <div className="container">

@@ -12,7 +12,6 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 const renderPageOrContinue = (req, res, nextCl) => {
-  console.log(req.path)
   if (req.path.includes('_next') || req.path.includes('api/')) {
     return nextCl()
   }
@@ -24,8 +23,7 @@ const renderPageOrContinue = (req, res, nextCl) => {
   } else if (req.params.module) {
     query.page = '/[module]'
   }
-  console.log(query)
-  return app.render(req, res, req.params.page, query)
+  return app.render(req, res, req.path, query)
 }
 
 app.prepare().then(() => {
