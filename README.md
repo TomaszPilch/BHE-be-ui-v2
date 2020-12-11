@@ -19,6 +19,14 @@ CLIENT_SECRET
 CLIENT_ID
 NODE_ENV
 LOCALE_PASS
+APP_TITLE
+```
+
+## Link
+
+```
+node .\scripts\prelink.js
+yarn link @bheui\components
 ```
 
 ## Created from BHE be v1

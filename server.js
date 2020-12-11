@@ -26,8 +26,8 @@ const renderPageOrContinue = (req, res, nextCl) => {
   return app.render(req, res, req.path, query)
 }
 
-app.prepare().then(() => {
-  processLocale()
+app.prepare().then(async () => {
+  await processLocale()
 
   const server = express()
   server.use(`/static`, express.static('public'))

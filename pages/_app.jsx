@@ -4,6 +4,8 @@ import Head from 'next/head'
 import App from 'next/app'
 import { Provider } from 'react-redux'
 import { initializeIcons } from '@uifabric/icons'
+import getConfig from 'next/config'
+
 import withReduxAndAxios from '@bheui/components/lib/components/WithReduxAndAxios'
 
 import '../src/styles/main.scss'
@@ -16,6 +18,8 @@ import createApis from '../src/store/createApis'
 type AppTypes = {}
 
 initializeIcons()
+
+const { publicRuntimeConfig } = getConfig()
 class MyApp extends App<AppTypes> {
   componentDidCatch(error, info) {
     console.error(error)
@@ -28,7 +32,7 @@ class MyApp extends App<AppTypes> {
     return (
       <>
         <Head>
-          <title>DevX NextJS starterpack</title>
+          <title>{publicRuntimeConfig.appTitle}</title>
         </Head>
         <Provider store={store}>
           <Component {...pageProps} router={router} setToken={setToken} t={t} />

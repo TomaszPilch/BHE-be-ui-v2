@@ -8,6 +8,7 @@ module.exports = {
     localeSubpaths,
     apiUrl: process.env.API_URL,
     copyright: process.env.COPYRIGHT,
+    appTitle: process.env.APP_TITLE || 'DevX BE',
   },
   serverRuntimeConfig: {
     clientSecret: process.env.CLIENT_SECRET,
