@@ -1,13 +1,21 @@
 {
   "name": "bhe-be-ui-v2",
-  "version": "0.2.0-alpha2",
+  "version": "0.2.0-alpha3",
   "private": true,
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "better-npm-run start",
     "test": "jest",
     "test:watch": "jest --watch"
+  },
+  "betterScripts": {
+    "start": {
+      "command": "node server.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
   },
   "dependencies": {
     "@bheui/components": "1.0.0-alpha12",
@@ -17,6 +25,7 @@
     "@uifabric/fluent-theme": "^7.3.47",
     "@uifabric/icons": "^7.5.17",
     "axios": "^0.21.0",
+    "better-npm-run": "^0.1.1",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
