@@ -14,7 +14,7 @@
     "@fluentui/react": "^7.137.1",
     "@uifabric/fluent-theme": "^7.3.7",
     "@uifabric/icons": "^7.5.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "i18next-intervalplural-postprocessor": "^2.0.2",
     "next": "9.5.3",
     "next-i18next": "^6.0.2",
