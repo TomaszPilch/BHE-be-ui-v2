@@ -2,6 +2,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { ToastContainer } from 'react-toastr'
+import { cookie } from 'devx-js-utilities'
 import Router, { withRouter } from 'next/router'
 
 // redux
@@ -113,6 +114,11 @@ class RootScreen extends React.Component<Props, null> {
     this.props.onChangeUserGroupRequest(userGroupId)
   }
 
+  onLogout = () => {
+    cookie.createCookie('bheToken', '', -1, false, 'strict')
+    window.location.reload()
+  }
+
   render() {
     const { children, navigation, presentationId, presentationIds, router, selectedGroup, t, userGroups } = this.props
     return (
@@ -124,6 +130,7 @@ class RootScreen extends React.Component<Props, null> {
             onChangePresentationId={this.onChangePresentationId}
             onChangeRedirectUrl={this.handleChangeRedirectUrl}
             onChangeUserGroup={this.onChangeUserGroup}
+            onLogout={this.onLogout}
             presentationId={presentationId}
             presentationIds={presentationIds}
             selectedGroup={selectedGroup}

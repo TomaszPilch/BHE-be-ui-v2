@@ -464,10 +464,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bheui/components@1.0.0-alpha14":
-  version "1.0.0-alpha14"
-  resolved "https://registry.yarnpkg.com/@bheui/components/-/components-1.0.0-alpha14.tgz#c57626939e7f9572cf829bf38e2362df7a280633"
-  integrity sha512-0XVnv8AcSg1RpIChJJ+6MBq3kSBX8WJPc6w4leQ0KKYYo0psOXP9yWq3a6AZtiLGEHxuz+/x6BhEdUNHpNlnqA==
+"@bheui/components@1.0.0-beta2":
+  version "1.0.0-beta2"
+  resolved "https://registry.yarnpkg.com/@bheui/components/-/components-1.0.0-beta2.tgz#277eb9e777af6983c2094df2d7c9e417a53e7bf2"
+  integrity sha512-hTN2U5pGW7Pmrx8nDyLctFAUhrUJmB7mgiRwXK9tQiJMCgSpok80De8c5oLpLDcRmCS50eCvs1PUVY1VA02zjQ==
   dependencies:
     "@uppy/core" "^1.14.0"
     "@uppy/react" "^1.10.10"
@@ -475,7 +475,7 @@
     brace "^0.11.1"
     classnames "^2.2.6"
     cookie "^0.4.1"
-    devx-js-utilities "^0.1.4"
+    devx-js-utilities "^0.1.5"
     isomorphic-unfetch "^3.0.0"
     moment "^2.28.0"
     office-ui-fabric-react "^7.149.4"
@@ -1981,10 +1981,10 @@ axe-core@^4.0.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.1.1.tgz#70a7855888e287f7add66002211a423937063eaf"
   integrity sha512-5Kgy8Cz6LPC9DJcNb3yjAXTu3XihQgEdnIg50c//zOC/MyLP0Clg+Y8Sh9ZjjnvBrDZU4DgXS9C3T9r4/scGZQ==
 
-axios@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
-  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
     follow-redirects "^1.10.0"
 
@@ -3333,10 +3333,10 @@ detect-newline@^3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
-devx-js-utilities@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/devx-js-utilities/-/devx-js-utilities-0.1.4.tgz#d219ffbf076979439c46a3592a79bc06f1f13299"
-  integrity sha512-5tLzEOGtwQL+YqJZYAprB5cRi0+xyjhxXXqPd6HjI4k3V+vcgTlrtQyGb8e1SzNiv+CTdBG3cjQOBUN0h/Gtxw==
+devx-js-utilities@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/devx-js-utilities/-/devx-js-utilities-0.1.5.tgz#f48860646907e318959f08ad257ef0def4c1131e"
+  integrity sha512-pIHQMC8BP8RcaLAEuzwwU8RNaGjdswpMBKA6PA4upEUH6iyUZEDFwnIAzthw/utPfgZm0TI3O0rT1fVo7o1Gew==
 
 diff-match-patch@^1.0.4:
   version "1.0.5"
