@@ -73,7 +73,8 @@
       "delete": "Delete"
     },
     "group": "Group",
-    "description": "Description"
+    "description": "Description",
+    "selectValue": "Select value"
   },
   "modules": {
     "dashboard": {

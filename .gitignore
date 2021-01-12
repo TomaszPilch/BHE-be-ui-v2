@@ -35,3 +35,10 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# locales
+public/static/locales/en/*
+public/static/locales/*/*
+!public/static/locales/.gitkeep
+!public/static/locales/en/.gitkeep
+!public/static/locales/en

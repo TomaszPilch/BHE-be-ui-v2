@@ -2,6 +2,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { ToastContainer } from 'react-toastr'
+import { cookie } from 'devx-js-utilities'
 import Router, { withRouter } from 'next/router'
 
 // redux
@@ -52,7 +53,7 @@ class RootScreen extends React.Component<Props, null> {
     let redirectPath = null
     let redirectPathAs = null
     if ((!token || shouldReloadToken) && router.pathname !== '/login') {
-      redirectPath = 'login'
+      redirectPath = '/login'
       redirectPathAs = `/login?redirectTo=${window.location.pathname}`
     } else if (token && router.pathname === '/login') {
       const urlParams = new URLSearchParams(window.location.search)
@@ -86,15 +87,19 @@ class RootScreen extends React.Component<Props, null> {
 
   checkNotificationsToShow = () => {
     const { notificationToShow, clearNotifications, t } = this.props
-    if (notificationToShow.length > 0) {
+    if (notificationToShow.length > 0 && this.toastrContainer && this.toastrContainer.current) {
       const notifications = [...notificationToShow]
       clearNotifications()
       notifications.map((notification: NotificationType) => {
-        this.toastrContainer.current[notification.type](
-          notification.translate ? t(`notifications.${notification.message}`) : notification.message,
-          notification.translate ? t(`notifications.${notification.title}`) : notification.title,
-          { closeButton: true },
-        )
+        if (typeof this.toastrContainer.current[notification.type] === 'function') {
+          this.toastrContainer.current[notification.type](
+            notification.translate ? t(`notifications.${notification.message}`) : notification.message,
+            notification.translate ? t(`notifications.${notification.title}`) : notification.title,
+            { closeButton: true },
+          )
+        } else {
+          console.error(notification)
+        }
         return true
       })
     }
@@ -109,6 +114,11 @@ class RootScreen extends React.Component<Props, null> {
     this.props.onChangeUserGroupRequest(userGroupId)
   }
 
+  onLogout = () => {
+    cookie.createCookie('bheToken', '', -1, false, 'strict')
+    window.location.reload()
+  }
+
   render() {
     const { children, navigation, presentationId, presentationIds, router, selectedGroup, t, userGroups } = this.props
     return (
@@ -120,6 +130,7 @@ class RootScreen extends React.Component<Props, null> {
             onChangePresentationId={this.onChangePresentationId}
             onChangeRedirectUrl={this.handleChangeRedirectUrl}
             onChangeUserGroup={this.onChangeUserGroup}
+            onLogout={this.onLogout}
             presentationId={presentationId}
             presentationIds={presentationIds}
             selectedGroup={selectedGroup}
