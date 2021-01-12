@@ -464,10 +464,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bheui/components@1.0.0-beta2":
-  version "1.0.0-beta2"
-  resolved "https://registry.yarnpkg.com/@bheui/components/-/components-1.0.0-beta2.tgz#277eb9e777af6983c2094df2d7c9e417a53e7bf2"
-  integrity sha512-hTN2U5pGW7Pmrx8nDyLctFAUhrUJmB7mgiRwXK9tQiJMCgSpok80De8c5oLpLDcRmCS50eCvs1PUVY1VA02zjQ==
+"@bheui/components@1.0.0-beta3":
+  version "1.0.0-beta3"
+  resolved "https://registry.yarnpkg.com/@bheui/components/-/components-1.0.0-beta3.tgz#650dfbc0a8093b6f5bf35abfff40b8d3937b19ec"
+  integrity sha512-Lnr8yv7kC0xQrE0FigcRQPIwOEHq3gS5wgYn5CR70cHPV7W2Jg284sEqMGM8a1nXOaHaB7xl/P9h2sY6TvFgSQ==
   dependencies:
     "@uppy/core" "^1.14.0"
     "@uppy/react" "^1.10.10"
