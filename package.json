@@ -1,6 +1,6 @@
 {
   "name": "bhe-be-ui-v2",
-  "version": "v0.2.0-beta4",
+  "version": "0.2.0-beta4",
   "private": true,
   "scripts": {
     "dev": "node server.js",
