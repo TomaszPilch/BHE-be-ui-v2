@@ -1,0 +1,14 @@
+{
+  "errorCodes": {
+    "SOMETHING_WRONG": "Něco se pokazilo, zkuste to později.",
+    "BAD_EMAIL": "Špatný email.",
+    "BAD_PASSWORD": "Špatné heslo.",
+    "MISSING_HELPER_ACTIONS": "This input needs helper actions!"
+  },
+  "notifications": {
+    "SUCCESSFULLY_SAVED_MESSAGE": "Úspěšně uloženo",
+    "SUCCESSFULLY_SAVED_TITLE": "Uloženo",
+    "ITEMS_SUCCESSFULLY_DELETED_MESSAGE": "Úspěšně smazáno",
+    "ITEMS_SUCCESSFULLY_DELETED_TITLE": "Smazáno"
+  }
+}

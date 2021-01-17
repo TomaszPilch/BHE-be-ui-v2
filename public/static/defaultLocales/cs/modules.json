@@ -1,0 +1,415 @@
+{
+  "errorCodes": {
+    "SOMETHING_WRONG": "Něco se pokazilo, zkuste to později.",
+    "BAD_EMAIL": "Špatný email.",
+    "BAD_PASSWORD": "Špatné heslo.",
+    "MISSING_HELPER_ACTIONS": "This input needs helper actions!"
+  },
+  "editScreen": {
+    "submitButton": "Uložit"
+  },
+  "validationErrors": {
+    "required": "Tato hodnota je povinná.",
+    "badFormat": "Špatný formát.",
+    "tooShort": "Hodnota je příliš krátká, min. délka je {{length}}.",
+    "tooLong": "Hodnota je moc dlouhá, max. délka je {{length}}.",
+    "badPhoneFormat": "Formát tel. čísla není validní.",
+    "email": "Nevalidní emailová adresa.",
+    "cardNumber": "Číslo karty není validní.",
+    "range": "Hodnota musí být v rozmezí od {{start}} do {{end}}.",
+    "numeric": "Hodnota musí být číselná.",
+    "integer": "Hodnota musí být celé číslo.",
+    "badRegExp": "Špatný formát. Pattern: {{pattern}}",
+    "suffix_interval": "(1){ 1 další chyba };(2-4){ {{count}} další chyby };(5-inf){ {{count}} dalších chyb };"
+  },
+  "navigation": {
+    "users": "Uživatelé",
+    "settings": "Nastavení"
+  },
+  "general": {
+    "email": "Email",
+    "password": "Heslo",
+    "login": "Login",
+    "listNoData": "Žádná data k zobrazení",
+    "yes": "Ano",
+    "no": "Ne",
+    "add": "Přidat",
+    "view": "Zobrazit",
+    "edit": "Editovat",
+    "delete": "Smazat",
+    "refresh": "Obnovit",
+    "cancel": "Zrušit",
+    "confirm": "Potvrdit",
+    "notConfigured": "Formulář není nakonfigurován pro tento modul.",
+    "uploadImage": "Nahrát",
+    "save": "Uložit",
+    "name": "Jméno",
+    "apiKey": "API klíč",
+    "origin": "Origin",
+    "active": "Aktivní",
+    "groupId": "Group ID",
+    "createdAt": "Vytvořeno",
+    "updatedAt": "Upraveno",
+    "id": "ID",
+    "copyUrl": "Zkopírovat URL",
+    "showFilter": "Zobrazit filtr",
+    "hideFilter": "Skrýt filtr",
+    "hash": "Hash",
+    "status": "Status",
+    "logCount": "Počet logů",
+    "sourceMap": "Source map",
+    "app": "App",
+    "version": "Verze",
+    "stackTrace": "Stack trace",
+    "guardGroup": "Group",
+    "logLevel": "Log level",
+    "removeSelectedRequest": "Smazat vybrané řádky",
+    "module": "Modul",
+    "action": {
+      "list": "Seznam",
+      "view": "Zobrazení",
+      "add": "Přidání",
+      "edit": "Editace",
+      "delete": "Mazání"
+    },
+    "group": "Group",
+    "description": "Popis",
+    "selectValue": "Vyber hodnotu"
+  },
+  "modules": {
+    "dashboard": {
+      "menuTitle": "Domů",
+      "listTitle": "Domů"
+    },
+    "version": {
+      "menuTitle": "Verze",
+      "addTitle": "Přidat verzi",
+      "editTitle": "Editovat verzi",
+      "listTitle": "Všechny verze",
+      "viewTitle": "Verze",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "users": {
+      "menuTitle": "Uživatelé",
+      "listTitle": "Uživatelé",
+      "addTitle": "Přidat uživatele",
+      "editTitle": "Editovat uživatele",
+      "viewTitle": "Uživatel",
+      "parent": {
+        "menuTitle": "Uživatel"
+      },
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "userDevice": {
+      "menuTitle": "Zařízení uživatele",
+      "listTitle": "Zařízení uživatele",
+      "addTitle": "Přidat zařízení",
+      "editTitle": "Editovat zařízení",
+      "viewTitle": "Zařízení uživatele",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "userRights": {
+      "menuTitle": "Práva",
+      "listTitle": "Uživatelská práva",
+      "addTitle": "Přidat práva",
+      "editTitle": "Editovat práva",
+      "viewTitle": "Uživatelská práva",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "userGroups": {
+      "menuTitle": "Skupiny",
+      "listTitle": "Skupiny",
+      "addTitle": "Přidat skupinu",
+      "editTitle": "Editovat skupinu",
+      "viewTitle": "Skupina",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "userInGroups": {
+      "menuTitle": "Skupiny uživatelů",
+      "listTitle": "Skupiny uživatelů",
+      "addTitle": "Přidat uživatele do skupiny",
+      "editTitle": "Editovat uživatele v skupině",
+      "viewTitle": "Uživatel v skupině",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "settings": {
+      "menuTitle": "Nastavení",
+      "addTitle": "Přidat nastavení",
+      "editTitle": "Editovat nastavení",
+      "listTitle": "Nastavení",
+      "viewTitle": "Nastavení",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "guardX": {
+      "menuTitle": "GuardX"
+    },
+    "guardXApp": {
+      "menuTitle": "GuardX App",
+      "addTitle": "Přidat App",
+      "editTitle": "Editovat App",
+      "listTitle": "All Apps lists",
+      "viewTitle": "Apps list",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "guardXLog": {
+      "menuTitle": "GuardX log",
+      "listTitle": "All GuardX logs",
+      "viewTitle": "GuardX log",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "guardXGroup": {
+      "menuTitle": "GuardX group",
+      "listTitle": "All GuardX groups",
+      "viewTitle": "GuardX group",
+      "tab": {
+        "main": "Hlavní",
+        "logs": "Logs"
+      },
+      "form": {
+        "sourceMap": "Stack mapped"
+      }
+    },
+    "guardXSourceMap": {
+      "menuTitle": "GuardX Source Maps",
+      "listTitle": "All GuardX Source Maps",
+      "viewTitle": "GuardX Source Map",
+      "tab": {
+        "main": "Hlavní",
+        "logs": "Logs"
+      },
+      "form": {
+        "path": "File"
+      }
+    },
+    "cache": {
+      "menuTitle": "Cache",
+      "listTitle": "Cache",
+      "viewTitle": "Cache",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "logger": {
+      "menuTitle": "Logs"
+    },
+    "dbLogger": {
+      "menuTitle": "DB logs",
+      "addTitle": "Přidat DB log",
+      "editTitle": "Editovat DB log",
+      "listTitle": "All DB logs",
+      "viewTitle": "DB log",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "actionLogger": {
+      "menuTitle": "Action logs",
+      "addTitle": "Přidat action log",
+      "editTitle": "Editovat action log",
+      "listTitle": "All action logs",
+      "viewTitle": "Action log",
+      "tab": {
+        "main": "Hlavní"
+      }
+    },
+    "client": {
+      "menuTitle": "oAuth klient",
+      "addTitle": "Přidat klienta",
+      "editTitle": "Editovat klienta",
+      "listTitle": "Všichni klienti",
+      "viewTitle": "oAuth klient",
+      "tab": {
+        "main": "Hlavní"
+      }
+    }
+  },
+  "dataTableColumns": {
+    "actions": "Akce",
+    "action": "Akce",
+    "clientId": "Klient ID",
+    "clientSecret": "Klient secret",
+    "clientType": "Typ klienta",
+    "grants": "Grants",
+    "address": "Adresa",
+    "description": "Popis",
+    "email": "Email",
+    "group": "Skupina",
+    "id": "ID",
+    "key": "Klíč",
+    "name": "Jméno",
+    "role": "Role",
+    "token": "Token",
+    "username": "Username",
+    "user": "Uživatel",
+    "subject": "Předmět",
+    "to": "Komu",
+    "status": "Status",
+    "user_email": "Email uživatele",
+    "cityId": "Město ID",
+    "weatherData": "Weather data",
+    "updatedAt": "Naposledy upraveno",
+    "url": "Url",
+    "active": "Aktivní",
+    "batteryCapacity": "Kapacita baterie",
+    "fullTrashCan": "Plný koš",
+    "softwareVersion": "Verze softwaru",
+    "ipAddress": "IP adresa",
+    "feed_name": "Feed",
+    "title": "Titulek",
+    "link": "Link",
+    "onlineRadio": "Online rádio",
+    "onlineRadio_name": "Online rádio",
+    "floor_name": "Název patra",
+    "domain": "Doména",
+    "apiKey": "Api klíč",
+    "monthlyMessageCount": "Zpráv tento měsíc",
+    "limit": "Limit",
+    "topic_name": "Téma",
+    "visiblePublic": "Viditelné veřejně?",
+    "valueFrom": "Od",
+    "valueTo": "Do",
+    "type": "Typ",
+    "value": "Hodnota",
+    "enabled": "Aktivní",
+    "slackId": "Slack ID",
+    "error": "Chyba",
+    "version": "Verze",
+    "logLevel": "Log level",
+    "dataset_name": "Dataset",
+    "dateTime": "Datum a čas",
+    "unit": "Jednotka",
+    "threshold": "Práh",
+    "message": "Zpráva",
+    "texts_name": "Název",
+    "app_name": "Název aplikace",
+    "logCount": "Počet",
+    "module": "Modul",
+    "group_name": "Název skupiny",
+    "origin": "Origin",
+    "distance": "Vzdálenost",
+    "level": "Úroveň"
+  },
+  "forms": {
+    "active": "Aktivní",
+    "action": "Akce",
+    "code": "Kód",
+    "content": "Obsah",
+    "createdAt": "Vytvořeno",
+    "data": "Data",
+    "description": "Popis",
+    "clientId": "Klient ID",
+    "clientSecret": "Klient secret",
+    "clientType": "Typ klienta",
+    "grants": "Grants",
+    "feed": "Feed",
+    "guid": "Guid (unikátní)",
+    "id": "ID",
+    "image": "Obrázek",
+    "lastSync": "Poslední synchronizace",
+    "link": "Link",
+    "name": "Název",
+    "publicationDate": "Datum vydání",
+    "status": "Stav",
+    "sourceMap": "Sourcemap",
+    "subject": "Předmět",
+    "title": "Titul",
+    "to": "Komu",
+    "updatedAt": "Upraveno",
+    "url": "Url",
+    "user": "Uživatel",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "ipAddress": "IP adresa",
+    "temperature": "Teplota",
+    "info": "Info",
+    "type": "Typ",
+    "weatherData": "Data",
+    "position": "Pozice",
+    "floor": "Patro",
+    "lastActive": "Naposledy aktivní",
+    "favourite": "Oblíbené",
+    "onlineRadio": "Online rádio",
+    "key": "Klíč",
+    "group": "Skupina",
+    "value": "Hodnota",
+    "values": "Hodnoty",
+    "topic": "Téma",
+    "valueFrom": "Od",
+    "valueTo": "Do",
+    "visiblePublic": "Viditelné veřejně",
+    "enabled": "Aktivní",
+    "module": "Modul",
+    "actions": "Akce",
+    "apiKey": "Api klíč",
+    "origin": "Origin",
+    "username": "Username",
+    "token": "Token",
+    "surname": "Příjmení",
+    "email": "Email",
+    "phone": "Telefon",
+    "role": "Role",
+    "selectedGroupId": "ID vybrané skupiny",
+    "activePresentationId": "ID aktivní jaz. mutace",
+    "error": "Chyba",
+    "version": "Verze",
+    "logLevel": "Log level",
+    "stackTrace": "Stack trace",
+    "app": "App",
+    "guardGroup": "Guard group",
+    "hash": "Hash",
+    "logCount": "Počet chyb",
+    "logs": "Logs",
+    "ip": "IP",
+    "connectionType": "Typ připojení",
+    "macAddress": "Mac adresa",
+    "deviceType": "Typ zařízení",
+    "threshold": "Práh",
+    "unit": "Jednotka",
+    "dateTime": "Datum a čas",
+    "dataset": "Dataset",
+    "password": "Heslo",
+    "message": "Zpráva",
+    "templateName": "Šablona",
+    "moduleName": "Modul",
+    "identificationId": "Identifikační ID",
+    "groupId": "ID skupiny"
+  },
+  "filter": {
+    "_action": {
+      "search": "Hledat",
+      "reset": "Zrušit"
+    },
+    "id": "ID",
+    "search": "Vyhledávání",
+    "user": "Uživatel",
+    "status": "Status"
+  },
+  "valueToString": {
+    "typeObject": "_Object_",
+    "typeArray": "_Array_"
+  },
+  "paginator": {
+    "description": "Zobrazeno od {{first}} do {{last}} z {{count}} záznamů."
+  },
+  "confirmationModal": {
+    "deleteTitle": "Opravdu chcete smazat vybrané řádky?"
+  }
+}
