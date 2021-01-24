@@ -28,9 +28,8 @@ const renderPageOrContinue = (req, res, nextCl) => {
 
 app.prepare().then(async () => {
   await processLocale()
-
   const server = express()
-  server.use(`/static`, express.static('public'))
+  server.use(`/static`, express.static('public/static'))
   server.use(compression())
 
   server.get('/is-ready', (req, res) => {

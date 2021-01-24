@@ -464,10 +464,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bheui/components@1.0.0-beta3":
-  version "1.0.0-beta3"
-  resolved "https://registry.yarnpkg.com/@bheui/components/-/components-1.0.0-beta3.tgz#650dfbc0a8093b6f5bf35abfff40b8d3937b19ec"
-  integrity sha512-Lnr8yv7kC0xQrE0FigcRQPIwOEHq3gS5wgYn5CR70cHPV7W2Jg284sEqMGM8a1nXOaHaB7xl/P9h2sY6TvFgSQ==
+"@bheui/components@1.0.0-beta6":
+  version "1.0.0-beta6"
+  resolved "https://registry.yarnpkg.com/@bheui/components/-/components-1.0.0-beta6.tgz#71ebf64492b541f1aaea7c082093830b08f9673e"
+  integrity sha512-rxqb/Vs2hO40Jv27skMagdwSt2q9GKfRd9fJgK9hQ6kqojC+Kl+iBQiYqEMzrrvpo/owSiDiccrJ6XbenAE5Zg==
   dependencies:
     "@uppy/core" "^1.14.0"
     "@uppy/react" "^1.10.10"
@@ -2268,6 +2268,11 @@ bindings@^1.5.0:
   integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
   dependencies:
     file-uri-to-path "1.0.0"
+
+bintrees@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/bintrees/-/bintrees-1.0.1.tgz#0e655c9b9c2435eaab68bf4027226d2b55a34524"
+  integrity sha1-DmVcm5wkNeqraL9AJyJtK1WjRSQ=
 
 bl@^4.0.3:
   version "4.0.3"
@@ -7249,6 +7254,13 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
+prom-client@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/prom-client/-/prom-client-13.0.0.tgz#7e883e1c10c2d471258d3acf2d386197ffc819bd"
+  integrity sha512-M7ZNjIO6x+2R/vjSD13yjJPjpoZA8eEwH2Bp2Re0/PvzozD7azikv+SaBtZes4Q1ca/xHjZ4RSCuTag3YZLg1A==
+  dependencies:
+    tdigest "^0.1.1"
+
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
@@ -8738,6 +8750,13 @@ tar@^6.0.2:
     minizlib "^2.1.1"
     mkdirp "^1.0.3"
     yallist "^4.0.0"
+
+tdigest@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/tdigest/-/tdigest-0.1.1.tgz#2e3cb2c39ea449e55d1e6cd91117accca4588021"
+  integrity sha1-Ljyyw56kSeVdHmzZEReszKRYgCE=
+  dependencies:
+    bintrees "1.0.1"
 
 terminal-link@^2.0.0:
   version "2.1.1"

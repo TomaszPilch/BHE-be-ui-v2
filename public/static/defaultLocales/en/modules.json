@@ -74,7 +74,8 @@
     },
     "group": "Group",
     "description": "Description",
-    "selectValue": "Select value"
+    "selectValue": "Select value",
+    "selectNoOptions": "No options"
   },
   "modules": {
     "dashboard": {
