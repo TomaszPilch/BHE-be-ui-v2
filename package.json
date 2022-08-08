@@ -31,7 +31,7 @@
     "devx-js-utilities": "^0.1.5",
     "express": "^4.17.1",
     "i18next-intervalplural-postprocessor": "^2.0.2",
-    "next": "10.0.3",
+    "next": "12.1.0",
     "next-i18next": "^7.0.1",
     "next-redux-wrapper": "^6.0.2",
     "node-sass": "^5.0.0",
