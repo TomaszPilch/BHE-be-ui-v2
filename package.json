@@ -34,7 +34,7 @@
     "next": "10.0.3",
     "next-i18next": "^7.0.1",
     "next-redux-wrapper": "^6.0.2",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "office-ui-fabric-core": "^11.0.0",
     "prom-client": "^13.0.0",
     "ramda": "^0.27.1",
